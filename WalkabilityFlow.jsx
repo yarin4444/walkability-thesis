@@ -1,3 +1,4 @@
+
 import { ArrowDown } from "lucide-react";
 
 export default function WalkabilityFlow() {
@@ -47,6 +48,7 @@ export default function WalkabilityFlow() {
   return (
     <div className="flex flex-col items-center justify-center gap-6 py-10">
       <h1 className="text-2xl font-bold text-center">
+<<<<<<< HEAD
         Experimental System Diagram – \"Walkability: Sense and Analyze\"
       </h1>
       {steps.map((step, index) => (
@@ -56,6 +58,19 @@ export default function WalkabilityFlow() {
             <h2 className="font-semibold text-lg mb-1">{step.title}</h2>
             <p className="text-sm text-gray-700">{step.description}</p>
           </div>
+=======
+        Experimental System Diagram – "Walkability: Sense and Analyze"
+      </h1>
+      {steps.map((step, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <Card className="w-[320px] shadow-xl bg-white border-blue-300">
+            <CardContent className="p-4 text-center">
+              <div className="text-3xl mb-2">{step.icon}</div>
+              <h2 className="font-semibold text-lg mb-1">{step.title}</h2>
+              <p className="text-sm text-gray-700">{step.description}</p>
+            </CardContent>
+          </Card>
+>>>>>>> 4fa4e90b1a27b959b2fc12ae05daa95a084b82e2
           {index < steps.length - 1 && <ArrowDown className="my-4 text-blue-400" />}
         </div>
       ))}
